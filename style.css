@@ -1,0 +1,225 @@
+body,html,*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+#slider{
+    background-color:gray;
+    width:100%;
+    height: 80%;
+    position: relative;
+}
+#img{
+    width:100%; 
+    /* height: 700px; */
+    /* position: absolute; */
+}
+#btn-left{
+    height: 100px;
+    width: 50px;
+    left: 0;
+    top:0;
+    position: absolute;
+}
+#btn-right{
+    height: 100px;
+    width: 50px;
+    right: 0;
+    top:0;
+    position: absolute;
+}
+.left{
+    position: absolute;
+    top: 275px;;
+    left:10%;
+    width: 200px;
+    height: 180px;
+    opacity: 0.6;
+}.left:hover{
+    opacity: 1;
+    
+}
+.right{
+    position: absolute;
+    top: 275px;;
+    right:10%;
+    width: 200px;
+    height: 180px;
+    opacity: 0.8;
+}.right:hover{
+    opacity: 1;
+}
+.head{
+    background-color: red;
+    text-align: center;
+    padding: 40px;
+    position:absolute;
+    top:20%; 
+    line-height:normal; 
+}
+.head h1{
+    font-size: 30px;
+    line-height: normal;
+}
+#socialMedia{
+    position:absolute;
+    text-align: center;
+}
+.media{
+    margin: 2px;
+    width: 30px;
+    height: 30px;
+}
+#menu{
+    background-color:black;
+    position:sticky;
+    top:0;
+    overflow:hidden;
+}
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+li{
+    float:left;
+}
+li a{
+    color:width;
+    text-align: center;
+    padding: 14px;
+    text-decoration:none;
+    display:block;
+    color: aliceblue;
+}
+li a:hover:not(.active){
+    background-color:red;
+}
+.active{
+    background-color:red;
+}
+#content{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom-width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top:20px;
+    padding-bottom: 0px;
+
+}
+.title{
+    font-size: 40px;
+    width:90%;
+    font-weight:bold;
+    padding: 10px;
+}
+p{
+    text-align: justify;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.col{
+    position: relative;
+    float: left;
+    width: 30%;
+    min-height: 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height:250px;
+    transition: 0,5s ease;
+    backface-visibility: hidden;
+}
+.middle{
+    opacity: 0;
+    transition: 0,5s ease;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.text{
+    position: relative;
+    background-color:red;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 16px 30px; 
+    cursor: pointer;
+}
+.col:hover .image{
+    opacity: 0.7;
+}
+.col:hover .middle{
+    opacity: 1;
+}
+.inscription{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:6% 0;
+    text-align: center;
+    clear:left;
+
+}
+.inscription h2{
+    margin: 0 0 1% 0 ;
+    font-weight: 100;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.inscription .subscribe{
+    width:100%;
+    max-width: 600px;
+    margin:auto;
+}
+.inscription .subscribe input{
+    width:100%;
+    /* background-color:transparent; */
+    border:0;
+    border-bottom: 1px solid #ff0000;
+    text-align: center;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 300;
+    line-height:1.4;
+    color: beige;
+    outline: none;
+}
+.inscription .subscribe button{
+    margin-top: 3%;
+    background: transparent;
+    border: 2px solid #00ffff;
+    border-radius: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    position: relative;
+    transition: 2s;
+}
+.inscription .subscribe button:hover{
+    background-color: #ff0000;
+    padding: 10px 30px;
+    transition: 1s;
+}
+.footer{
+    clear: left;
+    padding: 40px;
+    bottom:1;
+    margin-top:auto;
+    background-color: #000000;
+}
+.footer h2{
+    text-align: center;
+    color: #ffffff;
+}
